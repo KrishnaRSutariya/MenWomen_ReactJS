@@ -198,7 +198,7 @@ function Dashboard() {
                                         </p>
                                     </a>
                                 </li>
-                                <li className="nav-item">
+                                <li className="nav-item" onClick={()=>{document.getElementById('view_all').style.display="block"}}>
                                     <a  className="nav-link" >
                                         <i className="nav-icon fas fa-edit" />
                                         <p>
@@ -206,7 +206,7 @@ function Dashboard() {
                                             <i className="fas fa-angle-left right" />
                                         </p>
                                     </a>
-                                    <ul className="nav nav-treeview">
+                                    <ul className="nav nav-treeview" id='view_all'>
                                         <li className="nav-item">
                                             <Link to="/Dashboard/form/Addproduct" className="nav-link">
                                                 <i className="far fa-circle nav-icon" />
@@ -221,7 +221,7 @@ function Dashboard() {
                                         </li>
                                     </ul>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <a  className="nav-link" >
                                         <i className="nav-icon fas fa-table" />
                                         <p>
@@ -237,7 +237,7 @@ function Dashboard() {
                                             </Link>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> */}
                             </ul>
                         </nav>
                         {/* /.sidebar-menu */}

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.whitetoblack {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+}
+
+.view_product img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.view_product h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.view_product h2:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.view_product p {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.view_product h4 {
+    font-size: 20px;
+}
+
+.view_product {
+    text-align: center;
+    width: calc(33.33% - 20px) !important;
+    margin: 10px;
+    border: 1px solid #e4e4e4;
+    padding: 35px 20px 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(-170deg, #fff -40%, #f2f2f2 30%, #fff 95%);
+}
+
+.modal_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-body {
+    padding: 0px !important;
+}
+
+.modal_text {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_text h3 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2em;
+    margin-top: 30px;
+}
+
+.modal_text img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    width: 100px;
+}
+
+.modal_text p {
+    color: #656565;
+    letter-spacing: 0;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+.modal_text input {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 12px;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+}
+
+.modal_text button {
+    color: #fff;
+    padding: 10px 22px;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.2s ease;
+    background-color: #27c7d8;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.modal_text button:hover {
+    background-color: #000;
+}
+
+
+h3 {
+    color: white !important;
+}
+
+@media screen and (max-width: 575px) {
+
+    /* -------------------------------------------------------------------------------------------------------
+                                                    Modal
+    ---------------------------------------------------------------------------------------------------------- */
+    .modal_img img {
+        display: none;
+    }
+
+    .modal_text {
+        padding: 15px 10px 15px 35px;
+    }
+
+    .modal_text h3 {
+        font-size: 13px !important;
+    }
+
+    .modal_text p {
+        font-size: 12px;
+        width: 80%;
+        margin: auto;
+        line-height: 16px;
+    }
+
+    .modal_text input {
+        padding: 8px 8px;
+    }
+
+    button.close,
+    button.mailbox-attachment-close {
+        padding: 5px 10px 0 0 !important;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    /* -------------------------------------------------------------------------------------------------------
+                                                    Modal
+    ---------------------------------------------------------------------------------------------------------- */
+    .modal_img img {
+        display: none;
+    }
+
+    .modal_text {
+        padding: 50px 10px 50px 50px;
+    }
+
+    button.close,
+    button.mailbox-attachment-close {
+        padding: 5px 10px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* -------------------------------------------------------------------------------------------------------
+                                                    Modal
+    ---------------------------------------------------------------------------------------------------------- */
+    .modal_img img {
+        display: none;
+    }
+
+    .modal_text {
+        padding: 50px 10px 50px 50px !important;
+    }
+
+    button.close,
+    button.mailbox-attachment-close {
+        padding: 5px 10px !important;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    /* -------------------------------------------------------------------------------------------------------
+                                                    Modal
+    ---------------------------------------------------------------------------------------------------------- */
+    .modal_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .modal_text {
+        padding: 50px 15px 50px 50px !important;
+
+    }
+
+    button.close,
+    button.mailbox-attachment-close {
+        padding: 5px 10px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* -------------------------------------------------------------------------------------------------------
+                                                    Modal
+    ---------------------------------------------------------------------------------------------------------- */
+    .modal_text {
+        padding: 50px 20px 50px 50px !important;
+    }
+
+
+    button.close,
+    button.mailbox-attachment-close {
+        padding: 5px 10px !important;
+    }
+}
+
+.bg-warning,
+.bg-warning>a {
+    color: white !important
+}

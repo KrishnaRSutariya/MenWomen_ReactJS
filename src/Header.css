@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.nav-link {
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 13px !important;
+    line-height: 20px !important;
+    font-weight: 600 !important;
+}
+
+.icon {
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.herder_img {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+}
+
+.herder_img img {
+    width: 100px;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+}
+
+/* 
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle 
+{
+    background-color: transparent;
+    border: none;
+}
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus
+{
+    box-shadow: none;
+    background-color: transparent;  
+    border: none;
+}    */
+/* .btn-primary 
+{
+    background-color: transparent!important;
+    border: none;
+}
+.btn-primary:hover
+{
+    background-color: transparent;
+    border: none;
+} */
+/* .btn 
+{
+    line-height: 0.5!important;
+} */
+.login a {
+    color: black;
+}
+
+.login a p {
+    padding: 8px 20px;
+    margin-bottom: 0;
+}
+
+.login p:hover {
+    transition: 0.5s;
+    color: #000;
+    background-color: #e9ecef;
+}
+
+.dropdown-toggle::after {
+    display: none;
+    /* margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent; */
+}
+
+@media screen and (max-width: 960px) {
+
+    .login a {
+        color: black;
+    }
+
+    .login a p {
+        padding: 8px 10px!important;
+        margin-bottom: 0;
+    }
+
+    .login p:hover {
+        transition: 0.5s;
+        color: #000;
+        background-color: #e9ecef;
+    }
+
+}
+
+
+@media screen and (max-width: 575px) {
+
+    .herder_img img {
+        width: 80px;
+    }
+
+    .icon {
+        font-size: 13px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap');
+
+.img_h {
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+}
+
+.slider_img1 {
+    position: absolute;
+    top: 70%;
+    left: 50px;
+}
+
+.slider_img1 h3 {
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.slider_img1 p {
+    color: aliceblue;
+}
+
+.slider_img2 {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider_img2 p,
+h3 {
+    color: aliceblue;
+}
+
+.slider_img1 button {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.slider_img1 button:hover {
+    background-color: #333 !important;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_box {
+    width: calc(25% - 30px);
+    text-align: center;
+    margin-top: 0!important;
+    margin: 15px;
+    padding: 0 0 40px 0;
+}
+
+.product_box img {
+    width: 100%;
+}
+
+.product_box p {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .07em;
+    margin-top: 10px;
+    transition: all .3s ease-in-out;
+}
+
+
+.product_box p:hover {
+    color: rgb(185, 105, 119);
+}
+
+.product_box button {
+    background-color: #222;
+    color: #f5f5f5;
+    border: none;
+    padding: 5px 20px;
+}
+
+@media screen and (max-width: 575px) {
+    .product_box {
+        width: calc(100% - 30px);
+        padding: 0px 30px 15px 30px;
+    }
+    #img_w
+    {
+        width: 710px!important;
+    }
+    .img_h {
+        width: 500px;
+        height: 380px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .product_box {
+        width: calc(50% - 30px);
+    }
+    .img_h {
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .img_h {
+        height: 500px;
+        object-fit: cover;
+    }
+    .product_box {
+        width: calc(33.33% - 30px);
+    }
+}
+
+.men img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    filter: brightness(60%);
+    transform: scale(1.1) rotate(0.001deg);
+    transition: 0.5s;
+    padding: 0;
+    margin: 0;
+}
+
+
+.men {
+    position: relative;
+    overflow: hidden;
+}
+
+.men_text {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.men_text h1 {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1em;
+    color: #fff!important;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px black;
+}
+a
+{
+    text-decoration: none!important;
+}
+#link
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#link:hover 
+{
+    transition: 0.5s;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+.men_text h5 {
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    line-height: 1em;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px!important;
+}
+
+/* .men_text h5:hover
+{
+    border-bottom: 5px solid #008ac5;
+    border-radius: 10px;
+    margin-right: 150px;
+} */
+.men:hover img {
+    transform: scale(1) rotate(0deg);
+    overflow: hidden;
+}
+
+@media screen and (max-width: 575px) {
+    .men_text h1 {
+        font-size: 22px !important;
+    }
+
+    .men_text h5 {
+        font-size: 10px !important;
+    }
+
+    .men_text {
+        top: 50% !important;
+        left: 25% !important;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+    }
+    .men img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .men_text h1 {
+        font-size: 30px !important;
+    }
+
+    .men_text h5 {
+        font-size: 14px !important;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .men_text h1 {
+        font-size: 30px !important;
+    }
+
+    .men_text h5 {
+        font-size: 14px !important;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .men_text h1 {
+        font-size: 35px !important;
+    }
+
+    .men_text h5 {
+        font-size: 16px!important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .men_text h1 {
+        font-size: 35px !important;
+        
+    }
+
+    .men_text h5 {
+        font-size: 16px!important;
+    }
+}

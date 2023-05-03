@@ -1,0 +1,19 @@
+
+
+.cart_product_name
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cart_button
+{
+    color:white;
+    background-color: red;
+    border: none;
+    padding:10px 20px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-size:12px;
+}

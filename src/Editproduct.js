@@ -29,9 +29,6 @@ const Editproduct = () => {
             })
     },[])
 
-
-
-
     const submit = (e) => {
 
             e.preventDefault();
@@ -50,7 +47,7 @@ const Editproduct = () => {
                     setName('')
                     setDescription('')
                     setPrice('')
-                    navigate('/Dashboard')
+                    navigate('/Dashboard/form/viewproduct');
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -335,7 +332,7 @@ const Editproduct = () => {
                                                     <input type="number" value={price} className="form-control" id="Price" placeholder="Price" autoComplete='off'   onChange={(e) => setPrice(e.target.value)} />
                                                 </div>
                                                 <div className="form-check">
-                                                    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                                                    <input type="checkbox" className="form-check-input" id="exampleCheck1" required/>
                                                     <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
                                                 </div>
                                             </div>

@@ -31,7 +31,7 @@ const View_products = () => {
         })
 
     const deletehendle = (id) => {
-        axios.delete(`http://localhost:5000/deleteproduct/${id}`)
+        axios.delete(`https://long-cowboy-boots-jay.cyclic.app/deleteproduct/${id}`)
 
             .then(function (response) {
                 // console.log(response.data);

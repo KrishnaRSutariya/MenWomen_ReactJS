@@ -36,7 +36,7 @@ const Editproduct = () => {
 
             e.preventDefault();
 
-            axios.post(`http://localhost:5000/updateproduct/${params.id}`, {
+            axios.post(`https://long-cowboy-boots-jay.cyclic.app/updateproduct/${params.id}`, {
                 product_image: image,
                 product_name: name,
                 product_description: description,

@@ -14,7 +14,7 @@ function Login() {
     const [val, setval] = useState(false);
     const sign_in = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:5000/userLogin', {
+        axios.post('https://long-cowboy-boots-jay.cyclic.app/userLogin', {
             email: Email,
             password: password,
         }).then(function (response) {

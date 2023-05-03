@@ -26,7 +26,7 @@ function Buynow() {
     const ID = useParams();
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/getsingleproduct/${ID.id}`)
+        axios.get(`https://long-cowboy-boots-jay.cyclic.app/getsingleproduct/${ID.id}`)
 
             .then(function (response) {
                 // console.log(response.data);

@@ -20,7 +20,7 @@ const Addtocart = () => {
     }
 
     useEffect(() => {
-        axios.get('http://localhost:5000/getallproduct')
+        axios.get('https://long-cowboy-boots-jay.cyclic.app/getallproduct')
 
             .then(function (response) {
                 console.log(response.data);

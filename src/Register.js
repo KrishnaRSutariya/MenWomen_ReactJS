@@ -12,7 +12,7 @@ function Register() {
 
     const register =(e)=> {
         e.preventDefault()
-        axios.post('http://localhost:5000/userRegister', {
+        axios.post('https://long-cowboy-boots-jay.cyclic.app/userRegister', {
             name: name,
             email: email,
             password: Password,

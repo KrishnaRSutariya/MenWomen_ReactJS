@@ -12,7 +12,7 @@ const Menwatch = () => {
 
   useEffect(() => {
 
-    axios.get('http://localhost:5000/menwatch')
+    axios.get('https://long-cowboy-boots-jay.cyclic.app/menwatch')
 
       .then(function (response) {
         // console.log(response.data);

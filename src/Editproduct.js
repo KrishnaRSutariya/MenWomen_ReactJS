@@ -14,7 +14,7 @@ const Editproduct = () => {
     const params = useParams();
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/getsingleproduct/${params.id}`, {
+        axios.get(`https://long-cowboy-boots-jay.cyclic.app/getsingleproduct/${params.id}`, {
 
         })
             .then(function (response) {

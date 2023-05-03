@@ -19,7 +19,7 @@ const handel = () => {
 const View_products = () => {
 
     const [view, setView] = useState([]);
-    axios.get('http://localhost:5000/getallproduct')
+    axios.get('https://long-cowboy-boots-jay.cyclic.app/getallproduct')
 
         .then(function (response) {
             // console.log(response);   

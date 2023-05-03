@@ -28,7 +28,7 @@ const Form = () => {
     const submit = (e) => {
         e.preventDefault();
 
-        axios.post('http://localhost:5000/createproduct', {
+        axios.post('https://long-cowboy-boots-jay.cyclic.app/createproduct', {
             product_image: image,
             product_name: name,
             product_description: description,

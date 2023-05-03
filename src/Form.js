@@ -223,7 +223,7 @@ const Form = () => {
                                 {/* Add icons to the links using the .nav-icon class
          with font-awesome or any other icon font library */}
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
+                                    <a href="/Dashboard" className="nav-link">
                                         <i className="nav-icon fas fa-tachometer-alt" />
                                         <p>
                                             Dashboard
@@ -255,7 +255,7 @@ const Form = () => {
                                         </li>
                                     </ul>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <a className="nav-link">
                                         <i className="nav-icon fas fa-table" />
                                         <p>
@@ -271,7 +271,7 @@ const Form = () => {
                                             </Link>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> */}
                             </ul>
                         </nav>
                         {/* /.sidebar-menu */}

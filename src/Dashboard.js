@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-// var i = false;
+var i = false;
 // const handel = () =>{
 //     if(i==true)
 //     {
@@ -190,7 +190,7 @@ function Dashboard() {
                                 {/* Add icons to the links using the .nav-icon class
        with font-awesome or any other icon font library */}
                                 <li className="nav-item menu-open">
-                                    <a href="#" className="nav-link active">
+                                    <a href="/Dashboard" className="nav-link active">
                                         <i className="nav-icon fas fa-tachometer-alt" />
                                         <p>
                                             Dashboard
@@ -198,7 +198,7 @@ function Dashboard() {
                                         </p>
                                     </a>
                                 </li>
-                                <li className="nav-item" onClick={()=>{document.getElementById('view_all').style.display="block"}}>
+                                <li className="nav-item" onClick={()=>{(i==false)? document.getElementById('view_all').style.display="block":document.getElementById('view_all').style.display="none";(i==false)?i=true:i=false}}>
                                     <a  className="nav-link" >
                                         <i className="nav-icon fas fa-edit" />
                                         <p>
